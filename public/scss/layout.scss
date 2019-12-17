@@ -1,0 +1,760 @@
+/*!
+ * Copyright (c) 2019.
+ *
+ *  The TravelDoctor NZ (http://www.traveldoctor.co.nz/)
+ *  Copyright (c) 2019 The TravelDoctor NZ.
+ *  Date: 2019
+ *  Customized Theme Layout Styling
+ *  Created by SNAP Web Designs (https://www.snapwebdesigns.co.nz)
+ *
+ */
+
+/*********************************
+
+1. Fonts Imports
+2. Body and General Stuff
+3. Header
+    3.1 Stuff
+    3.2 Top Nav Link
+    3.3 Logo / Brand
+    3.4 Main Navigation
+
+4. Footer
+
+5. Home Page
+
+6. About Page
+
+7. Services Page
+
+8. Info Page
+
+10. Contact Page
+
+11. Clinic Page
+
+12. Blog / Articles Page
+
+**********************************/
+
+/***************
+1 Fonts Imports
+***************/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+/************************
+2 Body and General Stuff
+************************/
+
+// Core variables and mixins
+@import "td_custom-theme";
+
+/*
+*
+* Customized Theme Styling
+*
+*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: $font-size-base;
+  font-weight: 400;
+  color: $white-base;
+}
+
+//h1  { font-size: $font-size-h1; }
+//h2  { font-size: $font-size-h2; }
+//h3  { font-size: $font-size-h3; }
+h4  { font-size: $font-size-h4; }
+h5  { font-size: $font-size-h5; }
+h6  { font-size: $font-size-h6; }
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.header-red {
+    color: $theme-color;
+    line-height: 1.2;
+}
+.header-white {
+    color: $white-base;
+    line-height: 1.2;
+
+}
+
+hr {
+    border-color: $white-base;
+    background-color: $white-base;
+}
+
+/*
+ * theme background colour
+ */
+// Red Background
+.bg-theme {
+    background-color: $theme-color;
+    font-size: ceil($font-size-base + 2);
+    border-color: darken($theme-color, 10%);
+
+    .display-4 {
+        font-weight: 500;
+    }
+}
+// Light Gray Background
+.bg-theme-light {
+    color: $gray-light !important;
+    font-size: ceil($font-size-base + 2);
+    background-color: #eeeeee;
+}
+// White Background
+.bg-theme-white {
+    color: $gray-light !important;
+    font-size: ceil($font-size-base + 2);
+    //text-align: center;
+}
+
+.boarder-theme {
+  border: 1px solid $theme-color;
+}
+
+// Breadcrumb
+.breadcrumb {
+    background-color: $white-base;
+    color: $theme-color;
+    font-weight: 600;
+    font-size: ceil($font-size-base - 2);
+    padding: .75rem .5rem;
+    margin: auto;
+    text-transform: uppercase;
+    border-radius: 0;
+
+    a {
+        color: $gray-light;
+        margin-right: 5px;
+        margin-left: 5px;
+
+        &:hover {
+            color: lighten($gray-light, 10%);
+            text-decoration: underline;
+        }
+  }
+}
+
+// Background Image
+.fixed-img,
+.parallax {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.fixed-images {
+  background-attachment: fixed;
+}
+.parallax,
+.blurb,
+.gmaps {
+  height: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.parallax {
+
+  .context {
+    clear: both;
+    margin: 0;
+    position: absolute;
+    top: 25%;
+
+    h1 {
+      text-transform: uppercase;
+    }
+
+    p {
+      color: $white-base;
+      font-size: ceil($font-size-base - 1);
+    }
+  }
+}
+
+.blurb {
+
+  .context {
+    clear: both;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $white-base;
+    }
+  }
+}
+
+.btn-theme,
+.btn-theme-white {
+  font-size: $font-size-large;
+  margin-top: 15px;
+  padding: 10px 20px;
+}
+
+.btn-theme {
+  color: $theme-color !important;
+  background-image: none;
+  background-color: transparent;
+  border-color: $theme-color;
+
+  &:hover {
+    color: $white-base !important;
+    background-color: $theme-color;
+    border-color: $theme-color;
+  }
+}
+
+.btn-theme-white {
+  color: $white-base !important;
+  background-image: none;
+  background-color: transparent;
+  border-color: $white-base;
+
+  &:hover {
+    color: $theme-color !important;
+    background-color: $white-base;
+    border-color: $white-base;
+  }
+}
+
+// Remove later with Image Thumbnail in Article
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*******************
+3 Header / Top Nav
+*******************/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $white-base;
+  z-index: 10;
+}
+.header-bolder {
+    font-weight: 600;
+}
+.header-image {
+    height: 200px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/******************
+3.2 Top Nav Link
+******************/
+
+// Top Bar Links - Staff Login etc
+.top-nav {
+    height: 50px;
+    width: 100%;
+    padding: 15px 0;
+    background-color: $theme-color;
+}
+
+// Top Bar Styling
+.top-nav-links {
+  text-align: right;
+  font-size: ceil($font-size-large - 2);
+
+  a {
+    color: $white-base;
+    padding-left: 10px;
+
+    &:hover {
+      color: lighten($theme-color, 40%);
+      text-decoration: underline;
+    }
+  }
+
+  .fa {
+    //padding: 0 15px;
+    //color: $white-base;
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+}
+
+/****************
+3.3 Logo / Brand
+****************/
+
+.navbar-brand {
+
+  img {
+    height: 30px;
+  }
+}
+
+/*******************
+3.4 Main Navigation
+*******************/
+
+// main navbar theme settings
+.navbar-theme {
+
+  .navbar-nav {
+    font-size: $font-size-base;
+
+    .nav-link {
+      color: lighten($theme-color, 30%);
+
+      &:hover {
+        color: lighten($theme-color, 10%);
+      }
+    }
+    .active {
+
+      &> .nav-link {
+        color: $theme-color;
+      }
+    }
+  }
+}
+
+.bg-nav {
+  background-color: $white-base;
+  border-color: darken($white-base, 10%);
+}
+
+// mobile dropdown bar menu
+.navbar-toggler {
+  color: $theme-color !important;
+  border-color: $theme-color;
+
+  &:hover {
+    color: rgba(197,52,75,0.75) !important;
+    border: 1px solid rgba(197,52,75,0.85) !important;
+  }
+}
+.navbar-toggler-icon{
+  color: $theme-color;
+}
+
+/*******************
+4 Footer
+*******************/
+
+#footer {
+background-color: $theme-color;
+color: $white-base;
+font-size: $font-size-base;
+padding: 20px 0 10px 0;
+
+    .fab {
+    font-size: ceil($font-size-h1 + 2);
+    padding: 0 10px;
+    }
+}
+
+// Footer Widgets Sections
+.footer-widget {
+
+    h4 {
+    color: $white-base;
+    margin-top: 20px;
+    text-align: center;
+    }
+
+    // Footer Site Map
+    .footer-site,
+    .footer-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 15px;
+        text-align: center;
+
+        li {
+            padding-bottom: 5px;
+
+            a {
+            color: $white-base;
+            text-decoration: none;
+
+                &:hover {
+                    color: darken($white-base, 30%);
+                }
+            }
+
+            .fa {
+                padding-left: 15px;
+                padding-right: 5px;
+            }
+        }
+    }
+
+    // Footer Social Icon Links
+    .footer-social {
+        margin-top: 0;
+        padding: 15px;
+        text-align: center;
+
+        li {
+            display: inline;
+            list-style: none;
+            padding-left: 5px;
+            padding-right: 5px;
+
+            a {
+                text-decoration: none;
+                color: $white-base;
+
+                &:hover {
+                    color: darken($white-base, 30%);
+                }
+            }
+        }
+    }
+}
+
+.footer-divider {
+  border-top: 1px solid $white-base;
+}
+
+// Footer Copyright and Creator
+.copyright {
+    background-color: darken($theme-color, 10%);
+    padding: 15px 0 5px;
+    font-weight: 200;
+}
+
+.footer-copyright,
+.footer-right {
+    color: $white-base;
+    font-size: ceil($font-size-base - 2);
+    text-align: center;
+    padding: 0 15px;
+
+    a {
+        color: $white-base;
+
+        &:hover {
+            color: darken($white-base, 30%);
+            //color: $gray-light;
+        }
+    }
+}
+
+/*******************
+5 Home Page
+*******************/
+
+// Blog / Article Section
+.jumbotron-heading {
+  margin-bottom: 30px;
+}
+.article-text {
+  color: $gray;
+}
+.created {
+  color: $gray-light;
+  font-style: italic;
+  font-size: $font-size-small;
+  font-weight: 400;
+
+  .fa {
+    padding-right: 5px;
+  }
+}
+
+/*******************
+10 Contact Page
+*******************/
+.info-content {
+    text-align: center;
+
+    .heading {
+        margin-bottom: 30px;
+    }
+}
+
+form {
+  margin-top: 30px;
+}
+
+.form-control {
+  font-size: inherit;
+}
+
+.input-theme {
+
+  &:hover {
+    border: 1px solid $theme-color;
+    box-shadow: 1px 1px 4px $theme-color;
+  }
+}
+
+.td-icon {
+  font-size: ceil($font-size-h1 * 1.15) ;
+  padding-bottom: 15px;
+}
+
+/*******************
+11 Clinics Page
+*******************/
+/*
+* Clinic Holding Page
+ */
+// Flex Content for Clinics
+.td-content {
+    clear: both;
+    text-align: center;
+    padding-bottom: 3.75em;
+    //color: $white-base;
+
+    .td-clinics {
+        margin-top: 1.2em;
+        padding: 1.4em 0;
+        border-radius: 4px;
+    }
+}
+
+/*
+ * Clinic Page
+ */
+
+// Clinc Contact Details Styling
+.td-info {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: $white-base;
+  text-align: center;
+
+  h3 {
+    padding: 10px 0;
+    color: $white-base;
+  }
+}
+.td-info-red {
+  background-color: $theme-color;
+}
+.td-info-light {
+  background-color: lighten($theme-color, 5%);
+}
+
+//#td-clinic {
+//    font-size: ceil($font-size-base +2);
+//}
+
+// Staff Profile Stying
+.profile-header {
+    margin-bottom: 30px;
+}
+
+#td-profile {
+}
+.profile {
+
+    h4 {
+        font-size: ceil($font-size-h4 + 4);
+    }
+
+    em {
+        font-size: $font-size-small;
+    }
+
+    //p {
+    //    font-size: ceil($font-size-base + 2);
+    //}
+}
+
+
+
+/**********************
+12 Blog/Articles Page
+**********************/
+
+.td-article {
+
+    a {
+        color: $theme-color;
+
+        &:hover {
+            //color: lighten($theme-color, 20%);
+            text-decoration: none;
+        }
+    }
+}
+
+.blog-post-meta {
+    color: $theme-color;
+
+
+    a {
+    //    color: $theme-color;
+        color: $gray-light;
+    }
+}
+
+.flex-content {
+    clear: both;
+    text-align: center;
+    padding-bottom: 3.75em;
+}
+
+/**************
+12.1 Blog Page
+**************/
+
+/******************
+12.2 Articles Page
+******************/
+
+/***************
+12.3 Pagination
+***************/
+.blog-pagination {
+    text-align: center;
+}
+
+.pagination{
+
+    .active{
+
+        .page-link {
+            background: $theme-color;
+            border-color: $theme-color;
+        }
+    }
+}
+
+.page-link {
+    color: $theme-color;
+    border-color: $theme-color;
+
+    &:hover {
+        color: $white-base;
+        //text-decoration: none;
+        background-color: lighten($theme-color, 10%);
+
+    }
+
+}
+
+
+/*
+*
+* media styling with min-width of 768px and over
+*
+*/
+@media (min-width: 768px) {
+
+  .header-image {
+    height: 600px !important;
+    margin-top: -120px;
+  }
+
+  .navbar-brand {
+
+    img {
+      height: 80px;
+    }
+  }
+
+  .navbar-theme {
+
+    .navbar-nav {
+      font-size: ceil($font-size-base + 4);
+    }
+  }
+
+  .bg-nav {
+    opacity: .9;
+    height: 120px;
+  }
+
+    .breadcrumb {
+        font-size: ceil($font-size-base + 2);
+        padding: .75rem 1rem;
+    }
+
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+
+    /* Flexbox styling and hack adjustment */
+    .row-flex, .row-flex > div[class*='col-'] {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex:1 1 auto;
+    }
+    .row-flex-wrap {
+        -webkit-flex-flow: row wrap;
+        align-content: flex-start;
+        flex:0;
+
+    }
+    .row-flex > div[class*='col-'],
+    .container-flex > div[class*='col-'] {
+        margin:-.2px; /* hack adjust for wrapping */
+    }
+
+    .flex-content {
+        padding-bottom: 5em;
+    }
+
+  .parallax,
+  .blurb {
+
+    .context {
+      clear: both;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+
+      p {
+          font-size: ceil($font-size-base + 4);
+      }
+
+      .btn {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .footer-content {
+    text-align: left;
+  }
+
+  .footer-copyright {
+    text-align: left;
+  }
+  .footer-right {
+    text-align: right;
+  }
+
+}

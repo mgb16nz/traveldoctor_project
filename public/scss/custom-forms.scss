@@ -1,0 +1,92 @@
+/*!
+ * Copyright (c) 2019.
+ *
+ *  The TravelDoctor NZ (http://www.traveldoctor.co.nz/)
+ *  Copyright (c) 2019 The TravelDoctor NZ.
+ *  Date: 2019
+ *  Customized Contact Form Styling
+ *  Created by SNAP Web Designs (https://www.snapwebdesigns.co.nz)
+ *
+ */
+
+// Core variables and mixins
+@import "td_custom-theme";
+
+.middleColumn {
+
+    .text,
+    .dropdown,
+    .textarea {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: $font-size-base;
+        line-height: 1.42857143;
+        color: #555555;
+        border: 1px solid $gray-light;
+        border-radius: 4px;
+        //-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        //box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        //-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+        //-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        //transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+        &:hover {
+            border: 1px solid lighten($theme-color, 10%);
+            box-shadow: 1px 1px 4px lighten($theme-color, 10%);
+        }
+    }
+
+    .textarea {
+        height: auto;
+    }
+}
+
+.Actions,
+.btn-toolbar {
+    padding: 0 0;
+
+    .action {
+        display: block;
+        width: 100%;
+        color: $theme-color;
+        background-color: transparent;
+        text-align: center;
+        margin-top: 25px;
+        padding: 8px 2em;
+        font-size: $font-size-large;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1.3333333;
+        border: 1px solid $theme-color;
+        border-radius: 4px;
+
+        &:hover {
+            background-color: $theme-color;
+            color: $white-base;
+        }
+    }
+
+    p {
+        margin-top: 5px;
+
+        a {
+            color: $theme-color;
+            padding-top: 2px;
+        }
+    }
+
+}
+
+.userform {
+    font-weight: bold;
+    font-size: $font-size-base;
+    //color: $theme-color;
+    //text-align: left !important;
+    padding-bottom: 20px;
+}
+
+.field {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,648 @@
+/*!
+ * Copyright (c) 2019.
+ *
+ *  The TravelDoctor NZ (http://www.traveldoctor.co.nz/)
+ *  Copyright (c) 2019 The TravelDoctor NZ.
+ *  Date: 2019
+ *  Customized Theme Layout Styling
+ *  Created by SNAP Web Designs (https://www.snapwebdesigns.co.nz)
+ *
+ */
+/*********************************
+
+1. Fonts Imports
+2. Body and General Stuff
+3. Header
+    3.1 Stuff
+    3.2 Top Nav Link
+    3.3 Logo / Brand
+    3.4 Main Navigation
+
+4. Footer
+
+5. Home Page
+
+6. About Page
+
+7. Services Page
+
+8. Info Page
+
+10. Contact Page
+
+11. Clinic Page
+
+12. Blog / Articles Page
+
+**********************************/
+/***************
+1 Fonts Imports
+***************/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+/************************
+2 Body and General Stuff
+************************/
+/*
+*
+* Customized Theme Styling
+*
+*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fefefe;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.header-red {
+  color: #c5344b;
+  line-height: 1.2;
+}
+
+.header-white {
+  color: #fefefe;
+  line-height: 1.2;
+}
+
+hr {
+  border-color: #fefefe;
+  background-color: #fefefe;
+}
+
+/*
+ * theme background colour
+ */
+.bg-theme {
+  background-color: #c5344b;
+  font-size: 16px;
+  border-color: #9d293c;
+}
+.bg-theme .display-4 {
+  font-weight: 500;
+}
+
+.bg-theme-light {
+  color: #777777 !important;
+  font-size: 16px;
+  background-color: #eeeeee;
+}
+
+.bg-theme-white {
+  color: #777777 !important;
+  font-size: 16px;
+}
+
+.boarder-theme {
+  border: 1px solid #c5344b;
+}
+
+.breadcrumb {
+  background-color: #fefefe;
+  color: #c5344b;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 0.75rem 0.5rem;
+  margin: auto;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+.breadcrumb a {
+  color: #777777;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.breadcrumb a:hover {
+  color: #919191;
+  text-decoration: underline;
+}
+
+.fixed-img,
+.parallax {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fixed-images {
+  background-attachment: fixed;
+}
+
+.parallax,
+.blurb,
+.gmaps {
+  height: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.parallax .context {
+  clear: both;
+  margin: 0;
+  position: absolute;
+  top: 25%;
+}
+.parallax .context h1 {
+  text-transform: uppercase;
+}
+.parallax .context p {
+  color: #fefefe;
+  font-size: 13px;
+}
+
+.blurb .context {
+  clear: both;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.blurb .context h1,
+.blurb .context h2,
+.blurb .context h3,
+.blurb .context h4,
+.blurb .context h5,
+.blurb .context h6 {
+  color: #fefefe;
+}
+
+.btn-theme,
+.btn-theme-white {
+  font-size: 18px;
+  margin-top: 15px;
+  padding: 10px 20px;
+}
+
+.btn-theme {
+  color: #c5344b !important;
+  background-image: none;
+  background-color: transparent;
+  border-color: #c5344b;
+}
+.btn-theme:hover {
+  color: #fefefe !important;
+  background-color: #c5344b;
+  border-color: #c5344b;
+}
+
+.btn-theme-white {
+  color: #fefefe !important;
+  background-image: none;
+  background-color: transparent;
+  border-color: #fefefe;
+}
+.btn-theme-white:hover {
+  color: #c5344b !important;
+  background-color: #fefefe;
+  border-color: #fefefe;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*******************
+3 Header / Top Nav
+*******************/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fefefe;
+  z-index: 10;
+}
+
+.header-bolder {
+  font-weight: 600;
+}
+
+.header-image {
+  height: 200px !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/******************
+3.2 Top Nav Link
+******************/
+.top-nav {
+  height: 50px;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #c5344b;
+}
+
+.top-nav-links {
+  text-align: right;
+  font-size: 16px;
+}
+.top-nav-links a {
+  color: #fefefe;
+  padding-left: 10px;
+}
+.top-nav-links a:hover {
+  color: #f3d2d7;
+  text-decoration: underline;
+}
+.top-nav-links .fa {
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+/****************
+3.3 Logo / Brand
+****************/
+.navbar-brand img {
+  height: 30px;
+}
+
+/*******************
+3.4 Main Navigation
+*******************/
+.navbar-theme .navbar-nav {
+  font-size: 14px;
+}
+.navbar-theme .navbar-nav .nav-link {
+  color: #e8aab4;
+}
+.navbar-theme .navbar-nav .nav-link:hover {
+  color: #d3596c;
+}
+.navbar-theme .navbar-nav .active > .nav-link {
+  color: #c5344b;
+}
+
+.bg-nav {
+  background-color: #fefefe;
+  border-color: #e5e5e5;
+}
+
+.navbar-toggler {
+  color: #c5344b !important;
+  border-color: #c5344b;
+}
+.navbar-toggler:hover {
+  color: rgba(197, 52, 75, 0.75) !important;
+  border: 1px solid rgba(197, 52, 75, 0.85) !important;
+}
+
+.navbar-toggler-icon {
+  color: #c5344b;
+}
+
+/*******************
+4 Footer
+*******************/
+#footer {
+  background-color: #c5344b;
+  color: #fefefe;
+  font-size: 14px;
+  padding: 20px 0 10px 0;
+}
+#footer .fab {
+  font-size: 38px;
+  padding: 0 10px;
+}
+
+.footer-widget h4 {
+  color: #fefefe;
+  margin-top: 20px;
+  text-align: center;
+}
+.footer-widget .footer-site,
+.footer-widget .footer-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+}
+.footer-widget .footer-site li,
+.footer-widget .footer-links li {
+  padding-bottom: 5px;
+}
+.footer-widget .footer-site li a,
+.footer-widget .footer-links li a {
+  color: #fefefe;
+  text-decoration: none;
+}
+.footer-widget .footer-site li a:hover,
+.footer-widget .footer-links li a:hover {
+  color: #b2b2b2;
+}
+.footer-widget .footer-site li .fa,
+.footer-widget .footer-links li .fa {
+  padding-left: 15px;
+  padding-right: 5px;
+}
+.footer-widget .footer-social {
+  margin-top: 0;
+  padding: 15px;
+  text-align: center;
+}
+.footer-widget .footer-social li {
+  display: inline;
+  list-style: none;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.footer-widget .footer-social li a {
+  text-decoration: none;
+  color: #fefefe;
+}
+.footer-widget .footer-social li a:hover {
+  color: #b2b2b2;
+}
+
+.footer-divider {
+  border-top: 1px solid #fefefe;
+}
+
+.copyright {
+  background-color: #9d293c;
+  padding: 15px 0 5px;
+  font-weight: 200;
+}
+
+.footer-copyright,
+.footer-right {
+  color: #fefefe;
+  font-size: 12px;
+  text-align: center;
+  padding: 0 15px;
+}
+.footer-copyright a,
+.footer-right a {
+  color: #fefefe;
+}
+.footer-copyright a:hover,
+.footer-right a:hover {
+  color: #b2b2b2;
+}
+
+/*******************
+5 Home Page
+*******************/
+.jumbotron-heading {
+  margin-bottom: 30px;
+}
+
+.article-text {
+  color: #555555;
+}
+
+.created {
+  color: #777777;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 400;
+}
+.created .fa {
+  padding-right: 5px;
+}
+
+/*******************
+10 Contact Page
+*******************/
+.info-content {
+  text-align: center;
+}
+.info-content .heading {
+  margin-bottom: 30px;
+}
+
+form {
+  margin-top: 30px;
+}
+
+.form-control {
+  font-size: inherit;
+}
+
+.input-theme:hover {
+  border: 1px solid #c5344b;
+  box-shadow: 1px 1px 4px #c5344b;
+}
+
+.td-icon {
+  font-size: 42px;
+  padding-bottom: 15px;
+}
+
+/*******************
+11 Clinics Page
+*******************/
+/*
+* Clinic Holding Page
+ */
+.td-content {
+  clear: both;
+  text-align: center;
+  padding-bottom: 3.75em;
+}
+.td-content .td-clinics {
+  margin-top: 1.2em;
+  padding: 1.4em 0;
+  border-radius: 4px;
+}
+
+/*
+ * Clinic Page
+ */
+.td-info {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #fefefe;
+  text-align: center;
+}
+.td-info h3 {
+  padding: 10px 0;
+  color: #fefefe;
+}
+
+.td-info-red {
+  background-color: #c5344b;
+}
+
+.td-info-light {
+  background-color: #ce455a;
+}
+
+.profile-header {
+  margin-bottom: 30px;
+}
+
+.profile h4 {
+  font-size: 22px;
+}
+.profile em {
+  font-size: 12px;
+}
+
+/**********************
+12 Blog/Articles Page
+**********************/
+.td-article a {
+  color: #c5344b;
+}
+.td-article a:hover {
+  text-decoration: none;
+}
+
+.blog-post-meta {
+  color: #c5344b;
+}
+.blog-post-meta a {
+  color: #777777;
+}
+
+.flex-content {
+  clear: both;
+  text-align: center;
+  padding-bottom: 3.75em;
+}
+
+/**************
+12.1 Blog Page
+**************/
+/******************
+12.2 Articles Page
+******************/
+/***************
+12.3 Pagination
+***************/
+.blog-pagination {
+  text-align: center;
+}
+
+.pagination .active .page-link {
+  background: #c5344b;
+  border-color: #c5344b;
+}
+
+.page-link {
+  color: #c5344b;
+  border-color: #c5344b;
+}
+.page-link:hover {
+  color: #fefefe;
+  background-color: #d3596c;
+}
+
+/*
+*
+* media styling with min-width of 768px and over
+*
+*/
+@media (min-width: 768px) {
+  .header-image {
+    height: 600px !important;
+    margin-top: -120px;
+  }
+
+  .navbar-brand img {
+    height: 80px;
+  }
+
+  .navbar-theme .navbar-nav {
+    font-size: 18px;
+  }
+
+  .bg-nav {
+    opacity: 0.9;
+    height: 120px;
+  }
+
+  .breadcrumb {
+    font-size: 16px;
+    padding: 0.75rem 1rem;
+  }
+
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+
+  /* Flexbox styling and hack adjustment */
+  .row-flex, .row-flex > div[class*=col-] {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex: 1 1 auto;
+  }
+
+  .row-flex-wrap {
+    -webkit-flex-flow: row wrap;
+    align-content: flex-start;
+    flex: 0;
+  }
+
+  .row-flex > div[class*=col-],
+.container-flex > div[class*=col-] {
+    margin: -0.2px;
+    /* hack adjust for wrapping */
+  }
+
+  .flex-content {
+    padding-bottom: 5em;
+  }
+
+  .parallax .context,
+.blurb .context {
+    clear: both;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .parallax .context p,
+.blurb .context p {
+    font-size: 18px;
+  }
+  .parallax .context .btn,
+.blurb .context .btn {
+    margin-top: 15px;
+  }
+
+  .footer-content {
+    text-align: left;
+  }
+
+  .footer-copyright {
+    text-align: left;
+  }
+
+  .footer-right {
+    text-align: right;
+  }
+}
+
+/*# sourceMappingURL=layout.css.map */

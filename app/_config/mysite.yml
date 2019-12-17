@@ -1,0 +1,16 @@
+---
+Name: myproject
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: app
+
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - TravelDoctor\TDTheme\SiteConfigExtension
+
+BetterBrief\GoogleMapField:
+  default_options:
+    api_key: 'AIzaSyANE7wlfv9Vo17LyngDxPAQrEswJJDzwVg'
+
+SilverStripe\Blog\Model\BlogPost:
+  featured_images_directory: 'blog-images'
